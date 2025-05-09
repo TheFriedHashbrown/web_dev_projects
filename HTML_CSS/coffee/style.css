@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+:root{
+    --main-color: #deab5f;
+    --primary-color: #312e2e;
+}
+/* Setting colors to be used */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Removing padding and margin from all the elements*/
+
+body{
+    background-color: #100e0f;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling the nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+li{
+    display: inline;
+    list-style: none;
+}
+
+li a{
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+/* End of nav styling */
+
+/* Styling the header */
+.header{
+    background: url(Images/pexels-nao-triponez-129207.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.main-heading{
+    position: absolute;
+    top: 10rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+
+.primary-heading{
+    position: absolute;
+    bottom: 6rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+}
+
+.main-btn{
+    position: absolute;
+    bottom: 3rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background:transparent;
+    background-color: var(--main-color);
+
+}
+
+.products{
+    height: 90vh;
+}
+
+.title{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.icon{
+    height: 150px;
+    position: absolute;
+}
+
+.i1{
+    left: 18rem;
+}
+
+.i2{
+    left: 55rem;
+}
+
+.i3{
+    right: 18rem;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-top: 50px;
+    border: 2px solid var(--main-color);
+    height: 600px;
+    width: 400px;
+}
