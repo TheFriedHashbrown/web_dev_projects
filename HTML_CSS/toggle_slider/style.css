@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 400px;
+    margin-left: 750px;
+    display: flex;
+    height: 100vh;
+}
+
+#toggle{
+    visibility: hidden;
+}
+
+.label{
+    position: absolute;
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.circle{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: white;
+    height: 34px;
+    width: 34px;
+    border: 1px solid teal;
+    border-radius: 20px;
+    animation: moveBack .4s linear forwards;
+}
+
+#toggle:checked + .label{
+    background-color: teal;
+}
+
+#toggle:checked + .label .circle{
+    animation: moveforward .4s linear forwards;
+}
+
+@keyframes moveforward{
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(120px);
+    }
+}
+
+@keyframes moveBack {
+    0%{
+        transform: translateX(120px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
